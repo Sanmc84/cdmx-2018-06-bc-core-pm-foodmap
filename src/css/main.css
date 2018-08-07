@@ -32,6 +32,7 @@ width: 50%;
 height: auto;
 }
 
+  /* Estilos de color y tipo de letra de muro  */
 .body2{
   background-color:black;
   width: 100%;
@@ -40,7 +41,7 @@ height: auto;
  color: orange;
 
 }
-
+/* Estilos de buscador(Cuando esta en focus se quita estilos de navegador) */
 .form-control:focus {
   outline: 0 !important;
   border-color: initial;
