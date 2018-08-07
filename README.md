@@ -1,8 +1,9 @@
 #  F O O D M A P
 
-Crea una web-app que a través de un input pueda filtrar los restaurantes
-que se encuentran cerca de ti *(Tú decides la estructura que tendrán tus datos,
-puedes crear una lista de restaurantes en un arreglo, en un objeto, consumir una API, etc. Lo importante es que el contenido debe ser dinámico y no estático y el diseño es totalmente libre)*.
+El taco es un antojito  mexicano que consiste en una tortilla de maíz o de harina de trigo, rellena con algún alimento y doblada o enrollada. Se come solo o acompañado por alguna salsa. Es el antojito de mayor consumo en México. Por lo general, su nombre se relaciona con su relleno, su textura o por la forma de prepararlo o presentarlo a la venta. Los podemos encontrar en todo tipo de establecimientos, desde restaurantes de lujo hasta taquerías, que generalmente son lugares tradicionales y podemos encontrar en cada esquina. 
+
+
+
 
 #### Flujo de la aplicación.
 
