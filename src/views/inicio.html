@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Inicio food-Map</title>
-    
+
     <link rel="stylesheet" href="../css/main.css">
-<!-- Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<!-- API De Googlemaps -->    
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- API De Googlemaps -->
     <script src="https://maps.googleapis.com/maps/api/js?v=3.11&sensor=false" type="text/javascript"></script>
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
 </head>
+
 <body class="body2">
     <div class="container">
         <div class="">
             <div class="col">
-                <h1>¡Bienvenido!</h1>
-                <div id="map" style="width:100%; height:400px;"></div><!-- Tamaño del mapa-->
+                <h1>¿Que cenaremos hoy?</h1>
+                <!-- Tamaño del mapa-->
+                <div id="map" style="width:100%; height:400px;"></div>
             </div>
         </div>
         <hr>
+        <!-- Barra buscadora -->
         <div class="row no-gutters">
             <div class="col">
                 <input class="form-control border-secondary border-right-0 rounded-0" type="search" value="search" id="example-search-input4">
@@ -35,38 +43,72 @@
             </div>
         </div>
         <hr>
-        <div id= 
-        <div class="container"><!-- Enlase del Modal -->
+        <div id=< div class="container">
+            <!-- Enlase de fotos con el Modal -->
             <div class="row">
                 <div class="col-sm">
-                    <img data-toggle="modal" data-target=".bd-example-modal-lg" src="../images/Chupacabras.png" alt="">
+                    <img data-toggle="modal" data-target=".bd-example1-modal-lg" src="../images/Chupacabras.png" alt="">
                 </div>
                 <div class="col-sm">
-                    <img src="../images/losParados.png" alt="">
+                    <img data-toggle="modal" data-target=".bd-example2-modal-lg" src="../images/losParados.png" alt="">
                 </div>
                 <div class="col-sm">
-                    <img src="../images/parrillero.png" alt="">
+                    <img data-toggle="modal" data-target=".bd-example3-modal-lg" src="../images/parrillero.png" alt="">
                 </div>
             </div>
         </div>
     </div>
-    <!-- Estilos del modal -->
-    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <!-- Estilos del modal 1 -->
+    <div class="modal fade bd-example1-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
-          <div class="modal-content">
+            <div class="modal-content">
                 <img src="../images/Chupacabras.png" alt="">
-            <p>
-                    nombre: 'Tacos don Guero',<br>
-                    descripcion: 'Gringas y tacos de suadero',<br>
-                    horarioCierre: ['5:00AM'],<br>
-                    precioPorPersona: '$',<br>
-                    direccion: 'Río Nilo 66, Cuauhtémoc, 06700 Cuauhtémoc, CDMX
-            </p>
-          </div>
+                <p>
+                    Nombre: Super tacos Chupacabras
+                    <br>Descripcion: Tacos bisteck, cecina,chorizo,suadero,al pastor y arabes
+                    <br>HorarioCierre: 7:00AM
+                    <br>PrecioPorPersona: $$
+                    <br>Direccion: Avenida México Coyoacán Sn Local 1, Xoco, 03330 Benito Juárez, CDMX
+                </p>
+
+            </div>
         </div>
+    </div>
+    <!-- Estilos del modal -->
+    <div class="modal fade bd-example2-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <img src="../images/losParados.png" alt="">
+                <p>
+                    Nombre: Los Parados
+                    <br> Descripcion: Tacos al pastor,suadero y antojitos mexicanos
+                    <br> HorarioCierre: 2:30AM
+                    <br> PrecioPorPersona: $$$
+                    <br> Direccion: 03650 de, Av. Universidad 540, Narvarte Poniente, Ciudad de México, CDMX',
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Estilos del modal -->
+    <div class="modal fade bd-example3-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <img src="../images/parrillero.png" alt="">
+                <p>
+                    Nombre: El Parrillero
+                    <br>Descripcion: Tacos al pastor
+                    <br>HorarioCierre: 7:00AM
+                    <br>PrecioPorPersona: $
+                    <br>Direccion: 28, Aldama, Tlalnepantla Centro, 54000 Tlalnepantla, Méx.
+                </p>
+            </div>
+        </div>
+    </div>
     </div>
 </body>
 <script src="../js/maps.js"></script>
 <script src="../js/main.js"></script>
 <script src="../js/data.js"></script>
+
 </html>

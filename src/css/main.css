@@ -12,8 +12,8 @@ img{
   .center{
       text-align: center;
   }
-  
-.pag_splash, body2{
+  /* Estilos de color y tipo de letra de splash  */
+.pag_splash{
     background-color:black;
      width: 100%;
     font-family:  'Roboto', sans-serif;
@@ -21,7 +21,7 @@ img{
     color: orange;
 
 }
-
+/* Estilo de pagina  de splash */
 .pag_splash h1{
   text-align: center; 
 }
