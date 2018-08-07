@@ -1,0 +1,50 @@
+/*Importa fuente tipografica de google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/*Quita los estilos predeterminados del navegador,y  el movil tome el ancho del 100% */
+*{
+    box-sizing: border-box;
+    width: 100%;
+  }
+img{
+  width: 100%;
+  height: auto;
+}
+  .center{
+      text-align: center;
+  }
+  
+.pag_splash, body2{
+    background-color:black;
+     width: 100%;
+    font-family:  'Roboto', sans-serif;
+    text-align: center;
+    color: orange;
+
+}
+
+.pag_splash h1{
+  text-align: center; 
+}
+
+.pag_splash img{
+padding-top: 20%;
+width: 50%;
+height: auto;
+}
+
+.body2{
+  background-color:black;
+  width: 100%;
+ font-family:  'Roboto', sans-serif;
+ text-align: center;
+ color: orange;
+
+}
+
+.form-control:focus {
+  outline: 0 !important;
+  border-color: initial;
+  box-shadow: none;
+}
+
+
